@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --img-size: 300px
+    }
+
+    .space img {
+        width: calc(var(--img-size) /10);
+        height: calc(var(--img-size)/10);
+    }
+
+    .space img:hover {
+        filter: grayscale(0.5) blur(10px) drop-shadow(16px 16px 20px blue);
+        width: 450px;
+        height: 450px;
+        transition: 3s linear;
+    }
+
+    .space {
+        text-align: center;
+        margin-top: 25px;
+
+    }
+</style>
+
+<body>
+    <div class="space">
+        <img src="space.jpg">
+        <img src="space.jpg">
+        <img src="space.jpg">
+        <img src="space.jpg">
+        <img src="space.jpg">
+    </div>
+</body>
+
+</html>

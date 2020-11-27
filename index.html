@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --img-size:300px
+    }
+    .space  img{
+        width: calc(var(--img-size) /10);
+        height: calc(var(--img-size)/10);
+    }
+ .space img:hover{
+    filter: grayscale(100%);
+    width: 450px;
+    height: 450px;
+    transition: 3s linear;
+}
+.space{
+    text-align: center;
+
+
+}
+</style>
+<body>
+    <div class="space" >
+    <img src="space.jpg" >
+    </div>
+</body>
+</html>
